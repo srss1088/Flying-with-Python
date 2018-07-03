@@ -1,0 +1,30 @@
+class Student:
+    
+    def __init__ (self,n , m =0 ):
+        self.name = n 
+        self.marks = m
+        
+    def display(self):
+        print("hi", self.name)
+        print("your marks", self.marks)
+        
+    def calculate(self):
+        if (self.marks >= 75): 
+            print("you got fcd")
+            
+        elif (self.marks >= 60):
+            print("you got fc")
+        else:
+            print("fail")
+            
+n = int(input("how many std marks visible:" ))
+    
+i = 0
+while (i < n):
+    name = input("enter the name : ")
+    marks = int(input("enter the marks: "))
+    s1=Student(name, marks)
+    s1.display()
+    s1.calculate()
+    i=i+1
+    print("************")
