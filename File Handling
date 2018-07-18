@@ -1,0 +1,11 @@
+import os
+import random
+from random import shuffle
+os.chdir('J:\python source code')
+list=[]
+for line in open('read_it.txt','r').readlines():
+    list.append(line)
+#print(list)
+shuffle(list)
+list=list[0:10]
+print(list)
