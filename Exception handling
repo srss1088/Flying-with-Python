@@ -1,0 +1,15 @@
+import os
+import random
+from random import shuffle
+os.chdir('J:\python source code')
+list=[]
+try:
+    for line in open('readit.txt','r').readlines():
+        list.append(line)
+    
+    shuffle(list)
+    list=list[0:10]
+    print(list)
+except IOError as e:
+    print("File missing({})".format(e))
+    print("Contains path no file like you said")
