@@ -1,0 +1,8 @@
+import smtplib
+content="hai"
+mail=smtplib.SMTP('smtp.gmail.com',587)
+mail.ehlo()
+mail.starttls()
+mail.login('sureshkumarsrss@gmail.com','satish123$')
+mail.sendmail('sureshkumarsrss@gmail.com','cspraj143@gmail.com',content)
+mail.close()
