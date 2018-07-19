@@ -3,6 +3,6 @@ content="hai"
 mail=smtplib.SMTP('smtp.gmail.com',587)
 mail.ehlo()
 mail.starttls()
-mail.login('sureshkumarsrss@gmail.com','satish123$')
-mail.sendmail('sureshkumarsrss@gmail.com','cspraj143@gmail.com',content)
+mail.login('from mail id','Password')
+mail.sendmail('from mail id','to mail id',content)
 mail.close()
