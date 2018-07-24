@@ -1,0 +1,8 @@
+n=input("Enter the string:")
+l=[]
+for i in n:
+    l.append(i)
+print(l)
+l.reverse()
+a=''.join(l)
+print(a)
