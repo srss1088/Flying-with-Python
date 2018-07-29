@@ -1,0 +1,7 @@
+n=input("Enter the number:")
+total=0
+for i in n:
+    a=int(i)
+    if(a%2==0):
+        total=total+a
+print(total)
