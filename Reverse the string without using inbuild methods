@@ -1,0 +1,6 @@
+n=input("Enter the name:")
+list=[]
+for i in n:
+    list.append(i)
+list=(''.join(list[::-1]))
+print(list)
