@@ -4,4 +4,4 @@ def calc_factorial(x):
     else:
         return(x*(calc_factorial(x-1)))
 n=int(input("Enter the number:"))
-print("the factorial of given numbber is:",calc_factorial(n))
+print("the factorial of given number is:",calc_factorial(n))
